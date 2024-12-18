@@ -9,38 +9,46 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <link rel="shortcut icon" href="./images/twitter-brands-solid.svg" type="image/x-icon">
+    <title>Travel.com</title>
   </head>
   <body class="h-screen w-screen relative">
     <header
-      class="w-full flex justify-between items-center bg-[#01131B] text-white px-40 py-8 absolute top-0"
+      class="w-full flex justify-between items-center bg-[#01131B] text-white px-16 sm:px-28 lg:px-40 py-8 absolute top-0"
     >
       <div class="flex text-2xl font-semibold tracking-wide">
         <h1>Travel</h1>
         <h1 class="text-orange-500">.com</h1>
       </div>
-      <nav class="flex gap-20 items-center text-lg font-normal">
+      <nav class="hidden md:flex gap-16 lg:gap-20 items-center text-lg font-normal">
         <a href="">Home</a><a href="">About Us</a><a href="">Booking</a
         ><a href="">Contact Us</a>
       </nav>
+      <div class="md:hidden group relative ">
+        <i class="ri-menu-line text-2xl"></i>
+        <nav class="h-fit w-56 absolute z-50 top-16 -left-32 sm:-left-20 hidden group-hover:flex flex-col gap-16 lg:gap-20 border-b-2 border-l-2 bg-[#01131B] items-center text-lg font-normal py-5">
+        <a href="">Home</a><a href="">About Us</a><a href="">Booking</a
+        ><a href="">Contact Us</a>
+      </nav>
+      </div>
     </header>
     <main
-      class="w-full h-full bg-[url(https://wallpapercave.com/wp/wp5112924.jpg)] bg-no-repeat bg-cover"
+      class="w-full h-full bg-[url(./images/image.png)] bg-no-repeat bg-cover"
     >
       <div
-        class="pl-40 flex gap-7 justify-center flex-col h-full w-1/2 bg-[rgba(1,19,27,0.85)] text-white"
+        class="md:pl-28 lg:pl-40 pt-16 sm:pt-0 lg:pt-10 flex gap-3 lg:gap-7 justify-center flex-col h-full w-full text-center md:text-left md:w-1/2 bg-[rgba(1,19,27,0.85)] text-white"
       >
-        <h1 class="text-8xl font-bold">Plan Your Holiday</h1>
-        <h3 class="text-3xl font-light">Explore WorldWide</h3>
+        <h1 class="text-6xl md:text-5xl lg:text-8xl font-bold">Plan Your Holiday</h1>
+        <h3 class="text-2xl md:text-xl lg:text-3xl font-light">Explore WorldWide</h3>
         <div class="w-full flex flex-col gap-4">
           <div>
-            <p class="text-3xl font-bold">Get 20% off</p>
+            <p class="text-xl lg:text-3xl font-bold">Get 20% off</p>
             <p class="text-xs font-light text-orange-600">
               Winter Voucher Code
               <span class="font-semibold">TravelSafe20</span>
             </p>
           </div>
-          <div class="w-2/3 flex">
+          <div class="w-2/3 mx-auto md:mx-0 flex">
             <input
               type="text"
               class="flex-1 focus:outline-none pl-2 py-2 text-black"
@@ -65,12 +73,12 @@
               </svg>
             </div>
           </div>
-          <p class="text-lg font-light max-w-[95%]">
+          <p class="lg:text-lg mx-auto md:mx-0 font-light max-w-[70%] text-center md:text-left md:max-w-[95%]">
             We are passionate about uncovering the wonders of our diverse world
             and sharing them with you. Our mission is to inspire a sense of
             discovery, and stories that make our planet unique.
           </p>
-          <div class="w-full mt-6 flex gap-6 text-lg text-violet-800 icons">
+          <div class="md:w-full mx-auto md:mx-0 mt-3 lg:mt-6 flex gap-6 text-lg text-violet-800 icons">
             <i class="ri-facebook-fill"></i>
             <i class="ri-twitter-fill"></i>
             <i class="ri-instagram-fill"></i>
